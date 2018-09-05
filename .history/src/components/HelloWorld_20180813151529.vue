@@ -2,11 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <div>
-        <el-date-picker v-model="timeStart" :type="type" placeholder="选择日期"></el-date-picker>
-        <span class="text-gray">&nbsp;~&nbsp;</span>
-        <el-date-picker v-model="timeEnd" :type="type" placeholder="选择日期"></el-date-picker>
-    </div>
     <ul>
       <li>
         <a
@@ -94,16 +89,9 @@
 import Editor from './editor'
 export default {
   name: 'HelloWorld',
-  props:{
-    type:{
-        default:'date'
-      }
-  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      timeStart: getTimeStampStart(new Date()),//获取当天默认时间,
-      timeEnd: '',
+      msg: 'Welcome to Your Vue.js App'
     }
   },
   components: { Editor },

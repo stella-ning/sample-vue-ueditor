@@ -94,16 +94,15 @@
 import Editor from './editor'
 export default {
   name: 'HelloWorld',
-  props:{
-    type:{
-        default:'date'
-      }
-  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
       timeStart: getTimeStampStart(new Date()),//获取当天默认时间,
       timeEnd: '',
+      type:{
+        default:'date'
+      }
+
     }
   },
   components: { Editor },

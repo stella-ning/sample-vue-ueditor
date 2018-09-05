@@ -13,8 +13,6 @@ import '../static/neditor/neditor.all.min.js'
 import '../static/neditor/neditor.parse.min.js'
 import '../static/neditor/lang/zh-cn/zh-cn.js'
 
-//引入公共js
-import '@/common/config'
 
 Vue.use(ElementUI)
 
